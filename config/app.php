@@ -148,7 +148,9 @@ return [
 		/*
 		 *Custom 
 		 */
-		'Frozennode\Administrator\AdministratorServiceProvider'
+		'Frozennode\Administrator\AdministratorServiceProvider',
+        // Laravel IDE helper
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 
 	],
 
