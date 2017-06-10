@@ -15,6 +15,9 @@ return [
         ],
         'isActive' => [
             'type' => 'bool'
+        ],
+        'URL_title' => [
+            'type' => 'text'
         ]
     ]
 ];
