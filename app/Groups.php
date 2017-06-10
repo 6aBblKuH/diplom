@@ -14,4 +14,9 @@ class Groups extends Model {
         $query->where(['isActive'=>'1']);
     }
 
+    public function getAllGroups()
+    {
+        return $this->orderBy('title')->get();
+    }
+
 }

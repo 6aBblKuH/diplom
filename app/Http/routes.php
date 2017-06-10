@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'Auth\AuthController@getRegister');
+Route::get('/', 'GroupsController@index');
 
 Route::get('home', 'HomeController@index');
 

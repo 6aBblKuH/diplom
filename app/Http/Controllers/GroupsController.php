@@ -3,6 +3,7 @@
 use App\Groups;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Auth\AuthController;
 
 use Frozennode\Administrator\Menu;
 use Illuminate\Http\Request;
@@ -16,7 +17,7 @@ class GroupsController extends Controller {
 	 */
 	public function index(Groups $groupsModel)
 	{
-        $this->data['groups'] = $groupsModel->getActiveGroups();
+        $this->data['groups'] = !\Auth::check() ? $groupsModel->getActiveGroups() : $groupsModel->getAllGroups();
         return view('groups.main', $this->data);
 	}
 
