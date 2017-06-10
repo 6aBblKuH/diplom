@@ -69,7 +69,8 @@ return array(
 		'users',
 		'groups',
         'lessons',
-        'audiences'
+        'audiences',
+        'schedules'
 	),
 
 	/**
