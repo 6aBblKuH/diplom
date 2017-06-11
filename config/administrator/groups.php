@@ -7,7 +7,8 @@ return [
     'columns' => [
         'id',
         'title',
-        'isActive'
+        'isActive',
+        'URL_title'
     ],
     'edit_fields' => [
         'title' => [
