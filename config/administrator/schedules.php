@@ -7,6 +7,7 @@ return [
     'columns' => [
         'day_of_week',
         'lesson_id',
+        'group_id',
         'lesson_order',
         'lesson_type'
     ],
