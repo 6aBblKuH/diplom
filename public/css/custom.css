@@ -1,5 +1,5 @@
 body {
-    background: url("http://assets.prophotos.ru/data/articles/0001/8229/123141/original.jpg");
+    background: url("../images/main-bg.jpg");
     -webkit-background-size:100% auto;
     background-size:100% auto;
 }
@@ -12,12 +12,36 @@ body {
     border-top: 1px solid #fff;
     margin-top: 15px;
     padding-top: 5px;
-    color: #fff;
-    font-weight: 900;
-    text-shadow: 2px 2px 7px #000;
 }
 
 .groups-list a {
     padding: 10px 20px;
     margin-top: 15px;
+}
+
+.schedule-back-btn {
+    margin-top: 15px;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 120px;
+}
+
+.schedule-back-btn:hover {
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.schedule-table {
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 10px auto;
+}
+
+table.schedule-table tr, table.schedule-table td {
+    border: 1px solid #fff;
+    padding: 3px 7px;
 }
