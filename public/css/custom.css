@@ -1,3 +1,19 @@
+body {
+    background: url("http://assets.prophotos.ru/data/articles/0001/8229/123141/original.jpg");
+    -webkit-background-size:100% auto;
+    background-size:100% auto;
+}
+
 .groups-list {
     padding: 20px 0;
 }
+
+.schedule-item {
+    border-top: 1px solid #fff;
+    margin-top: 15px;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 2px 2px 7px #000;
+}
+
