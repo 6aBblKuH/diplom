@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Groups;
+use App\Schedules;
+use Auth;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Auth\AuthController;
@@ -47,9 +49,15 @@ class GroupsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Schedules $schedulesModel, $group)
 	{
-		//
+        if (Auth::check()) {
+            $schedule = $schedulesModel->getSchedule($group);
+            $this->data['schedules'] = $schedule;
+            return view('groups.group_schedule', $this->data);
+        }else {
+            return view('errors.404');
+        }
 	}
 
 	/**

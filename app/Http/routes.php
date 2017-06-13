@@ -22,4 +22,4 @@ Route::controllers([
 
 Route::get('groups', 'GroupsController@index');
 
-Route::get('groups/{group}', 'SchedulesController@index');
+Route::get('groups/{group}', 'GroupsController@show');
