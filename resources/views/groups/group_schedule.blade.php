@@ -3,10 +3,11 @@
 @section('content')
     <div class="container">
         @foreach($schedules as $schedule)
-            <div class="col-md-1 text-center">
+            <div class="col-md-2 text-center schedule-item">
                 <p>{{$schedule->day_of_week}}</p>
                 <p>{{$schedule->lesson_order}}</p>
                 <p>{{$schedule->lesson_type}}</p>
+                <p>{{$schedule->audience}}</p>
                 <p>{{$schedule->title}}</p>
                 <p>{{$schedule->teacher}}</p>
             </div>

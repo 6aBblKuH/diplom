@@ -19,6 +19,11 @@ class Schedules extends Model {
             'lessons.id', 
             '=', 
             'schedules.lesson_id'
+        )->join(
+            'audiences',
+            'audiences.id',
+            '=',
+            'schedules.audience_id'
         )->orderBy(
             'day_of_week',
             'asc'
@@ -30,7 +35,8 @@ class Schedules extends Model {
             'schedules.lesson_order',
             'schedules.lesson_type',
             'lessons.title',
-            'lessons.teacher'
+            'lessons.teacher',
+            'audiences.title as audience'
         )->where('group_id', $group_id)->get();
     }
 

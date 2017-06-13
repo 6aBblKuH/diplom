@@ -8,6 +8,7 @@ return [
         'day_of_week',
         'lesson_id',
         'group_id',
+        'audience_id',
         'lesson_order',
         'lesson_type'
     ],
@@ -26,6 +27,9 @@ return [
             'type' => 'number'
         ],
         'group_id' => [
+            'type' => 'number'
+        ],
+        'audience_id' => [
             'type' => 'number'
         ],
         'lesson_order' => [
